@@ -1,13 +1,23 @@
-import logo from './logo.svg';
+
 import './App.css';
+import liquid from "./resources/liquid.gif";
+import liquid2 from "./resources/liquid2.gif";
+import React from 'react';
+import {
+  StyleSheet,
+  Button,
+  View,
+} from 'react-native';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+     <header className="Header">
+        <h1> Calming Quotes</h1>
+     </header>
+        <img class="liquid2" src={liquid2} alt={"liquid2"}/>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Welcome to Calming Quotes!
         </p>
         <a
           className="App-link"
@@ -17,7 +27,8 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+        {/* <img class="liquid" src={liquid} alt={"liquid"}/> */}
+
     </div>
   );
 }
